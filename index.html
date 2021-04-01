@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sheer Cold Calculator</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./main.css"/>
+        <script src="./calculator.js"></script>
+        <script src="./keyHandler.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <p>
+                <label for="userlevel">User Pokemon Level:</label><br/>
+                <input type="number" min="1" max="100" value="100" class="userlevel"/>
+            </p>
+            <p>
+                <label for="enemylevel">Opponent Pokemon Level:</label><br/>
+                <input type="number" min="1" max="100" value="100" class="enemylevel"/>
+            </p>
+            <p>
+                <label for="generation">Game Generation</label><br/>
+                <input type="number" min="1" max="8" value="8" class="generation"/>
+            </p>
+            <p>
+                <input type="checkbox" class="icetype"/>
+                <label for="icetype">Is User Ice Type</label><br/>
+                <input type="button" onclick="main()" class="calculate" value="Calculate"/>
+            </p>
+            <p >
+               <h3 class="out"></h3>
+            </p>
+        </div>
+    </body>
+</html>
